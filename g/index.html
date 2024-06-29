@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Dinosaur Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen" id="startScreen">Press Space to Start</div>
+    <div class="game-container" id="gameContainer">
+        <div class="score" id="score">Score: 0</div>
+        <div class="dino" id="dino"></div>
+        <div class="ground"></div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAPoHFNTwYTUaEiYPAPRb3VBB45ychYKzw",
+    authDomain: "fir-game-d985e.firebaseapp.com",
+    projectId: "fir-game-d985e",
+    storageBucket: "fir-game-d985e.appspot.com",
+    messagingSenderId: "55464146003",
+    appId: "1:55464146003:web:ac61af7d27a11ddb7582a6",
+    measurementId: "G-Z7WHPZ0V9B"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
